@@ -1,0 +1,145 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.1/assets/img/favicons/favicon.ico">
+
+    <title>Blog Template for Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/blog/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/4.1/examples/blog/blog.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="container">
+      <header class="blog-header py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-4 pt-1">
+          </div>
+          <div class="col-4 text-center">
+            <a class="blog-header-logo text-dark" href={{ url_for('index') }}>The Spectrum Times</a>
+          </div>
+          <div class="col-4 d-flex justify-content-end align-items-center">
+          </div>
+        </div>
+      </header>
+
+      <div class="nav-scroller justify-content-between align-items-center">
+     
+      </div>
+
+
+          <div class="blog-main">
+ 
+            <div class="blog-post">
+              <h2 class="blog-post-title text-center">A comparative model that determines shift in the political spectrum of a country in the past decade.</h2> <br>
+                <div class = "text-center">
+              
+                
+
+                <p>For this project, we arranged all the data from the research Lucas did. This involved thoroughly checking through different reputable sources, including Reuters and BBC to remove biases and report accurate descriptions of countries' recent controversial policies. Using this data, we assigned a rank to the countries we surveyed, and used the results to establish a ranking. Upon compiling the research, we processed the data online using Numpy and Pandas.</p> 
+
+                <a href = {{ url_for('ranking') }}><button type="button" class="btn btn-secondary-outline btn-lg">View the Rankings</button></a>
+                <hr>
+
+            </div>
+            <br>
+            <section id="metrics">
+  
+              <p>We used a range of metrics to measure how much a country's political spectrum has shifted in the past 10-15 years.</p>
+              
+              <h3>Immigration Reforms</h3>
+              <p>Rhetoric on immigration policies tend to align with the populist bent of a nation's leadership.</p>
+
+
+              <h3>LGBTQ+ Rights</h3>
+              <p>In the United States, for example, LGBTQ+ rights are a proxy for the social views espoused by a country's government in the last decade. Attitudes toward LGBTQ+ rights are indicators of social activism in a nation, attitudes towards change, and the degree to which traditional religion exerts social control on community life.</p>
+              
+              <h3>Foreign Relations</h3>
+              <p>Looking at a country's stance on foreign relations informs us of the populist leanings of a country. 21st century populism frequently comes at odds with the notions of globalization and free trade.</p>
+            
+              <h3>Economic Policies</h3>
+              <p>A nation's economic policies can indicate the priorities of its current government. Economic right-leaning policies drive deregulation, corporate freedom, reduced taxes, and protectionism. 
+              </p>
+              
+              <h3>Religious Tolerance</h3>
+              <p>For example, in the United States, President Donald Trump's administration had limited 
+                religious tolerance
+                Countries shifting to the right may prioritize the word of religious institutions and a return to traditional cultural elements.</p>
+             
+            </div><!-- /.blog-post -->
+
+          </div><!-- /.blog-main -->
+  
+        </section>
+      </main><!-- /.container -->
+      <!-- Cards 
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+            <div class="card-body d-flex flex-column align-items-start">
+              <strong class="d-inline-block mb-2 text-primary">World</strong>
+              <h3 class="mb-0">
+                <a class="text-dark" href="#">Featured post</a>
+              </h3>
+              <div class="mb-1 text-muted">Nov 12</div>
+              <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+              <a href="#">Continue reading</a>
+            </div>
+            <img class="card-img-right flex-auto d-none d-lg-block" data-src="holder.js/200x250?theme=thumb" alt="Card image cap">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+            <div class="card-body d-flex flex-column align-items-start">
+              <strong class="d-inline-block mb-2 text-success">Design</strong>
+              <h3 class="mb-0">
+                <a class="text-dark" href="#">Post title</a>
+              </h3>
+              <div class="mb-1 text-muted">Nov 11</div>
+              <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+              <a href="#">Continue reading</a>
+            </div>
+            <img class="card-img-right flex-auto d-none d-lg-block" data-src="holder.js/200x250?theme=thumb" alt="Card image cap">
+          </div>
+        </div>
+      </div>
+    </div>
+--> 
+    
+
+    <footer class="blog-footer">
+      <p>Built by <a href = "https://www.agamjolly.com/">Agam Jolly</a> and Lucas Huang.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
+    <script src="https://getbootstrap.com/docs/4.1/dist/js/bootstrap.min.js"></script>
+    <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/holder.min.js"></script>
+    <script>
+      Holder.addTheme('thumb', {
+        bg: '#55595c',
+        fg: '#eceeef',
+        text: 'Thumbnail'
+      });
+    </script>
+  </body>
+</html>
